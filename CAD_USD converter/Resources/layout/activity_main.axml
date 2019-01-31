@@ -3,30 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+    android:layout_height="match_parent"
+	
+	>
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:rowCount="3"
+		android:columnCount="2".\fghbf
+		android:id="@+id/gridLayout1" >
+		<TextView
+			android:text="CAD"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginTop="20dp"
+			android:layout_marginLeft="20dp"
+			android:id="@+id/tvCAD" />
+		<EditText
+			android:inputType="numberDecimal"
+			android:layout_marginTop="20dp"	
+			android:layout_marginLeft="20dp"
+		android:id="@+id/etCAD" />
+		<TextView
+			android:text="USD"
+			android:layout_marginTop="20dp"
+			android:layout_marginLeft="20dp"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:id="@+id/tvUSD" />
+		<EditText
+			android:layout_marginTop="20dp"
+			android:layout_marginLeft="20dp"
+			android:inputType="numberDecimal"
+			android:id="@+id/etUSD" />
+		<Button
+			android:layout_marginTop="20dp"
+			android:layout_marginLeft="20dp"
+			android:text="Convert"
+			android:id="@+id/btnConvert" />
+		<Button
+			android:layout_marginTop="20dp"
+			android:layout_marginLeft="20dp"
+			android:text="Clear"
+			android:id="@+id/btnClear" />
+		
+		
+		
+	</GridLayout>
+	
+   
 
 </android.support.design.widget.CoordinatorLayout>
